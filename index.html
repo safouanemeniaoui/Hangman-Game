@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="images/head.png" />
+    <title>Create Hangman Game</title>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="container">
+      <div class="top-bar">
+        <p>hangman</p>
+        <p class="category-name">word from : <span></span></p>
+      </div>
+      <div class="main">
+        <div class="hang-game">
+          <div class="hangman">
+            <div class="the-stand"></div>
+            <div class="the-stem"></div>
+            <div class="the-hang"></div>
+            <div class="the-rope"></div>
+            <div class="head"></div>
+            <div class="body"></div>
+            <div class="hands"></div>
+            <div class="legs"></div>
+          </div>
+          <div class="letters"></div>
+        </div>
+        <div class="word"></div>
+      </div>
+      <div class="overlay"></div>
+      <div class="popup">
+        <p></p>
+        <button class="restart">restart</button>
+      </div>
+    </div>
+    <audio
+      src="audio/Cartoon Boing.mp3"
+      class="failure-aud"
+      type="audio/mpeg"
+    ></audio>
+    <audio
+      src="audio/Magic Chime.mp3"
+      class="success-aud"
+      type="audio/mpeg"
+    ></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
